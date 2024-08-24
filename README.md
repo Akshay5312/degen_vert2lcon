@@ -5,17 +5,17 @@ In the case that the convex hull lies in a degenerate affine subspace, identify 
 
 ## Usage
 
-[$A$, $b$, $A_{eq}$, $b_{eq}$] = degen_vert2lcon(Points)
+[ $A$, $b$, $A_{eq}$, $b_{eq}$ ] = degen_vert2lcon(Points)
 
 ## Output
 
-- [$A_{eq}$, $b_{eq}$]
+- [ $A_{eq}$, $b_{eq}$ ]
     - $A_eq \in \mathbb{R}^{n_0 \times d}$
     - $b_eq \in \mathbb{R}^{n_0 \times 1}$
 
 Linear equality constraints that characterize the subspace on which the convex hull lies. x is in the releant subspace iff $A_{eq}x - b_{eq} = 0$.
 
-- [$A$, $b$]
+- [ $A$, $b$ ]
     - $A \in \mathbb{R}^{n_1 \times d}$
     - $b \in \mathbb{R}^{n_1 \times 1}$
 

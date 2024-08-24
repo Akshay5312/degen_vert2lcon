@@ -38,7 +38,7 @@ function [A, b, A_eq, b_eq] = degen_vert2lcon(Points)
         S = [S, zeros(d, d-size(S,2))];
     end
 
-    if(all(S==0))
+    if(all(S<=1e-6))
         % Catch the case where there is only one unique point in Points 
         A = [];
         b = [];
@@ -54,8 +54,8 @@ function [A, b, A_eq, b_eq] = degen_vert2lcon(Points)
     % of the affine subspace. Columns corresponding to 0 values are
     % orthogonal to the convex hull, and can be used to form equality
     % constraints.
-    convhull_basis = U(:, ~(s==0));
-    orth_to_convhull = U(:, (s==0));
+    convhull_basis = U(:, ~(s<=1e-6));
+    orth_to_convhull = U(:, (s<=1e-6));
     
     % if x is in the convex hull, then A_eq*(x -x0) = 0 
     A_eq = orth_to_convhull';
