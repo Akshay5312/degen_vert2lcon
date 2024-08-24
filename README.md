@@ -13,13 +13,13 @@ In the case that the convex hull lies in a degenerate affine subspace, identify 
     - $A_eq \in \mathbb{R}^{n_0 \times d}$
     - $b_eq \in \mathbb{R}^{n_0 \times 1}$
 
-Linear equality constraints that characterize the subspace on which the convex hull lies. x is in the releant subspace iff $ A_{eq}x - b_{eq} = 0$.
+Linear equality constraints that characterize the subspace on which the convex hull lies. x is in the releant subspace iff $A_{eq}x - b_{eq} = 0$.
 
 - [$A$, $b$]
     - $A \in \mathbb{R}^{n_1 \times d}$
     - $b \in \mathbb{R}^{n_1 \times 1}$
 
-Linear inequality constraints that characterize the convex hull. x is in the convex hull iff A\*x < b && A_eq\*x = b_eq.
+Linear inequality constraints that characterize the convex hull. $x$ is in the convex hull iff $Ax < b$ and $A_{eq} x = b_{eq}$.
 
 ## Input
 
