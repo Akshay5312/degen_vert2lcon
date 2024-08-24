@@ -1,5 +1,5 @@
 function [A, b, A_eq, b_eq] = degen_vert2lcon(Points)
-%DEGEN_VERT2LCON Find a linearly constrained convex hull of a set of points
+%DEGEN_VERT2LCON Find a linearly constrained convex hull of a set of points.
 %   In the case that the convex hull lies in a degenerate affine subspace, 
 %   identify and return linear equality constraints (hyperplanes) 
 %   characterizing said subspace.
