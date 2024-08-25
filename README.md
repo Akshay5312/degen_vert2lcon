@@ -1,7 +1,10 @@
 # degen_vert2lcon
- 
 Find a linearly constrained convex hull of a set of points.
 In the case that the convex hull lies in a degenerate affine subspace, identify and return linear equality constraints (hyperplanes) characterizing said subspace.
+
+<p align="center">
+  <img src="degen_vert2con_figure_2.png?raw=true" alt="The convex hull of co-planar points in 3 dimensions"/>
+</p
 
 ## Usage
 
