@@ -4,7 +4,7 @@ In the case that the convex hull lies in a degenerate affine subspace, identify 
 
 <p align="center">
   <img src="degen_vert2con_figure_2.png?raw=true" alt="The convex hull of co-planar points in 3 dimensions"/>
-</p
+</p>
 
 ## Usage
 
